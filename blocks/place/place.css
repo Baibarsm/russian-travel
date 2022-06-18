@@ -1,7 +1,31 @@
 .place {
    display: grid;
    grid-template-columns: 460px 1fr;
-   grid-template-rows: repeat(1, max-content);
+   grid-template-rows: repeat(2, max-content);
    gap: 48px 40px;
    margin: 0 0 80px;
+}
+
+@media screen and (max-width: 1270px) {
+   .place {
+      grid-template-columns: 440px 1fr;
+      gap: 48px 32px;
+   }
+}
+
+@media screen and (max-width: 980px) {
+   .place {
+      grid-template-columns: 340px 1fr;
+      gap: 48px 28px;
+      margin: 0 0 73px;
+   }
+}
+
+@media screen and (max-width: 570px) {
+   .place {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, max-content);
+      gap: 32px;
+      margin: 0 0 66px;
+   }
 }
