@@ -5,7 +5,7 @@
    align-items: center;
    text-decoration: none;
    width: 100%;
-   min-height: 740px;
+   height: 100%;
    margin: 0;
    padding: 0;
    position: relative;
@@ -23,12 +23,14 @@
    position: absolute;
    background-color: #2a2c2f;
    opacity: .3;
+   transition: opacity 1s;
 }
 
 .cover__link:hover::after {
    opacity: .8;
 }
 
+/*
 @media screen and (max-width: 1270px) {
    .cover__link {
       min-height: 640px;
@@ -39,4 +41,4 @@
    .cover__link {
       min-height: 70vw;
    }
-}
+}*/
